@@ -1,0 +1,10 @@
+{
+ "scripts": {
+  "test": "mocha *_test.js"
+ },
+ "dependencies": {
+  "mocha": "^5.2.0",
+  "nock": "^10.0.4",
+  "twilio": "^3.26.0"
+ }
+}
