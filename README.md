@@ -14,15 +14,19 @@ In either case, I can only receive incoming calls through VOIP with an SIP smart
 
 ### twilioentry.js
 
+```
 Cell Phone +--> Twilio +--> Smartphone SIP Endpoint (contacts)
                        |
                        +--> Google Voicemail (non-contacts)
+```
 
 In this setup, the Twilio script receives all incoming calls, chooses whether to accept the call (i.e., forward to my smartphone), and forwards all calls to Google Voice for voicemail functionality.
 
 ### googlevoiceentry.js
 
+```
 Cell Phone +--> Google Voice +--> Twilio +--> Smartphone SIP Endpoint (contacts only)
+```
 
 In this setup, the Twilio script chooses whether to accept (i.e., foward to my smartphone) or reject the call from Google Voice.
 
